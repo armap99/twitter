@@ -11,4 +11,13 @@ describe("Unit test for User class", () => {
         expect(user.dateCreated).not.toBeUndefined();
         expect(user.dateUpdated).not.toBeUndefined();
     })
+
+    test("Add getters", () => {
+        const user = new User(1,"carlogilmar", "Carlo", "Bio");
+
+        expect(user.getUsername).toBeDefined();
+        expect(user.getBio).toBeDefined();
+        expect(user.getDateCreated).toBeDefined();
+        expect(user.getDateUpdated).toBeDefined();
+    })
 })
