@@ -23,6 +23,14 @@ class User {
     get getDateUpdated() {
         return this.dateUpdated;
     }
+
+    set setUsername(username) {
+        this.username = username;
+    }
+
+    set setBio(bio) {
+        this.bio = bio;
+    }
 }
 
 module.exports = User;
