@@ -9,6 +9,10 @@ class UserService {
     return Object.values(user);
   }
 
+  static updateBio(user, bio){
+    user.setBio = bio
+  }
+
   static updateUserUsername(user, username){
     user.setUsername = username
   }
